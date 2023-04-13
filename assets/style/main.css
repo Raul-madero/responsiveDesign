@@ -361,13 +361,21 @@ main {
     line-height: 1.8rem;
     color: #757575;
 }
+.plans-container--slider {
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
 .plans-container--card {
     position: relative;
+    scroll-snap-align: center;
     width: 70%;
-    min-width: 230px;
+    min-width: 190px;
     max-width: 300px;
     height: 250px;
-    margin: 50px auto 0;
+    margin: 50px 5px 0;
     padding: 0 15px;
     background-color: var(--justWhite);
     border-radius: 15px;
@@ -383,11 +391,96 @@ main {
     left: calc(50% - 60px);
     top: -15px;
     padding: 6px;
+    font-family: 'Inter', sans-serif;
     font-size: 1.2rem;
     font-weight: 700;
     line-height: 1.4rem;
     text-align: center;
 }
 .plan-card--title {
-    padding-top: 50px;
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: black;
+}
+.plan-card--price span {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.4rem;
+    color: var(--warmBlack);
+    vertical-align: text-top;
+}
+.plan-card--price {
+    margin-top: 15px;
+    font-family: 'Inter', sans-serif;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 6.3rem;
+    letter-spacing: .2rem;
+    color: black;
+}
+.plan-card--saving {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    color: hsl(0, 0%, 46%);
+}
+.plan-card--ca {
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    padding: 12px 16px;
+    background-color: var(--offWhite);
+    border: 1px solid var(--bitcoinOrange);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--warmblackTwo);
+}
+.plan-card--ca span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../icons/arrow-right.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 320px;
+    height: 150px;
+    padding: 40px 65px;
+    background-color: var(--bitcoinOrange);
+}
+.options--list-items {
+    list-style: none;
+}
+.options--list-items li {
+    margin: 10px 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--justWhite);
+}
+footer section img {
+    width: 38px;
+    height: 24px;
+}
+footer section p {
+    font-size: .8rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--softOrange);
 }
