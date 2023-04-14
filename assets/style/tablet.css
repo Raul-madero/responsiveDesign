@@ -1,0 +1,16 @@
+body {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.main-product-detail {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.plans-container--slider {
+    width: 100%;
+    max-width: 1024px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
